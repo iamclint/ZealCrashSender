@@ -1,0 +1,29 @@
+﻿<Window x:Class="ZealCrashSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZealCrashSender"
+        mc:Ignorable="d"
+
+        Title="Zeal Crash Reporter" Height="348" Width="812" FontSize="20" Icon="/ZealSword2.png" WindowStyle="ToolWindow" Topmost="True">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="248*"/>
+            <RowDefinition Height="99*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="87"/>
+            <ColumnDefinition Width="196*"/>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="289*"/>
+            <ColumnDefinition Width="47*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="219" Margin="10,0,0,0" VerticalAlignment="Center" Width="191" Source="/ZealSword2.png" Grid.ColumnSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="31,10,0,0" TextWrapping="Wrap" Text="Oops! It looks like everquest encountered an unexpected error and crashed." VerticalAlignment="Top" Foreground="White" FontSize="18" Height="41" Width="609" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="ArgumentsText" HorizontalAlignment="Left" Margin="60,51,0,0" TextWrapping="Wrap" Text="Data" VerticalAlignment="Top" Foreground="White" FontSize="16" Height="183" Width="607" Grid.Column="1" Grid.ColumnSpan="3"/>
+        <Button Content="Send Report" Grid.Column="1" Margin="0,39,114,10" Background="DarkOrange" Grid.Row="1" Grid.ColumnSpan="2" Click="Button_Click_1"/>
+        <Button Content="Exit" Grid.Column="2" Margin="179,39,11,10" Background="DarkOrange" Grid.Row="1" Grid.ColumnSpan="2" Click="Button_Click"/>
+    </Grid>
+</Window>
